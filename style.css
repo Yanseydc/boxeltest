@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --cadet-grey: #8DA1B9;
+    --pewter-blue: #95ADB6;
+    --thistle: #CBB3BF;
+    --champagne-pink: #DBC7BE;
+    --salmon-pink: #EF959C;
+    --black: #000000;
+    --white: #ffffff;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+a , a:focus{
+    text-decoration: none;
+    color: var(--black);
+}
+
+section {
+    /* position: relative; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.text{ 
+    position: absolute;
+    bottom: 200px;
+    left: 200px
+}
+
+.animation {
+    position: relative;
+}
+
+.video-wrapper {
+    position: relative;
+    margin: auto auto;
+    width: 1024px;
+    height: 760px;
+    background: url("assets/images/screens.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+}
+
+.video {
+    position: absolute;
+    top: 184px;
+    left: 130px;
+    width: 110px;
+    height: 120px;   
+}
+
+.main-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--black);
+    font-weight: bold;
+    font-size: 5rem;
+    white-space: nowrap;
+}
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cadet-grey);
+    left: 0;
+    top: 0;
+    opacity: .6;
+}
+
+
+.hero {
+    background-color: var(--thistle);
+    width: 100vw;
+    height: 100vh;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    /* padding-top: 5rem; */
+}
+
+.hero__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: 400;
+}
+
+.hero__brand {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* repeat(auto-fill, minmax(100px, 1fr)); */
+    gap: 10rem;
+    
+}
+
+.hero__brand a {
+    justify-self: center;
+    transition: 300ms all ease-in-out;
+}
+
+.hero__brand a:hover {
+    color: var(--white);
+    transform: scale(1.5);
+}
+
+.hero__brand a i {
+    font-size: 5rem;
+}
+
+.hero__brand a p {
+    text-align: center;
+}
+
+.last {
+    background-color:var(--pewter-blue);
+}
+
